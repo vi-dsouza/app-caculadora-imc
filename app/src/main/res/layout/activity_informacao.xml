@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFF1A"
+    tools:context=".Informacao">
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="373dp"
+        android:layout_height="147dp"
+        android:layout_marginTop="104dp"
+        android:fontFamily="casual"
+        android:text="A CALCULADORA DE IMC AJUDA
+        VOCÊ A DESCOBRIR SE ESTÁ NO PESO IDEAL PARA UMA MELHOR
+        QUALIDADE DE VIDA."
+        android:textAlignment="center"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:typeface="monospace"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="68dp"
+        android:fontFamily="cursive"
+        android:text="BEM VINDO(A)"
+        android:textAlignment="center"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/textView3"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="@+id/textView3"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="373dp"
+        android:layout_height="147dp"
+        android:fontFamily="casual"
+        android:text="* SOMENTE É NECESSÁRIO INFORMAR SEU PESO E SUA ALTURA, PARA SABER O ÍNDICE DE MASSA CORPOREA IDEAL."
+        android:textAlignment="center"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:typeface="monospace"
+        app:layout_constraintBottom_toTopOf="@+id/botaoProximo"
+        app:layout_constraintEnd_toEndOf="@+id/textView3"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/textView3"
+        app:layout_constraintTop_toBottomOf="@+id/textView3"
+        app:layout_constraintVertical_bias="0.32" />
+
+    <Button
+        android:id="@+id/botaoProximo"
+        android:layout_width="185dp"
+        android:layout_height="65dp"
+        android:layout_marginBottom="52dp"
+        android:backgroundTint="#000000"
+        android:fontFamily="cursive"
+        android:onClick="proximo"
+        android:text="PRÓXIMO"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/textView2"
+        app:layout_constraintStart_toStartOf="@+id/textView2" />
+</androidx.constraintlayout.widget.ConstraintLayout>
